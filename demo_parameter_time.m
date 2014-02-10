@@ -21,5 +21,6 @@ for ii=1: length(number_pair_train)
         end
         relative_set(rand(size(relative_set))<number_pair_train(ii))=0;
     end
-    relative_hmm_time(data_train, relative_set, 10);
+    relative_hmm(data_train, relative_set, 10, [], 'improved', 'alm', 0, [], [], 10);
+    relative_hmm(data_train, relative_set, 10, [], 'improved', 'ip', 0, [], [], 10);
 end
