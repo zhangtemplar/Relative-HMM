@@ -52,9 +52,10 @@ function [model_list idx model_score]=relative_hmm_alm(...
     % step size for alm. smaller step size means lower convergence speed
     % but better final convergence. We choose rho=1.5 as compromise. In
     % addition, rho>0.
-    rho=1.25;
+    rho=1.5;
     % tolarence for alm convergence
     tol=1e-3;
+    s = RandStream('mt19937ar','Seed',1);
     %% ====================================================================
     % variables
     % num_state=size(model.pi, 1);
@@ -252,7 +253,7 @@ function [model_list idx model_score]=relative_hmm_alm(...
             accep_ratio=1/(1+exp((now_conv-prev_conv)*log(iter)/temp_init));
             % Check the acceptance of the new mode, if it is accepted, then
             % we continue with the accepted one; otherwise, we 
-            if rand(1)>accep_ratio
+            if rand(s,1)>accep_ratio
                 break;
             end
         end

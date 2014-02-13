@@ -2,6 +2,8 @@
 % number of pairs
 clear;
 clc;
+root_dir='C:\Users\qzhang53\Documents\MATLAB\relative_hmm\';
+cd(root_dir);
 data_dir='C:\Users\qzhang53\Documents\MATLAB\relative_hmm\simulation\';
 load([data_dir 'simulation_data']);
 f1=fopen('simulation_alm_result.txt', 'w');
