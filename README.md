@@ -10,7 +10,7 @@ URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6618921&isnumber=66
 Author: Qiang Zhang
 Email: qzhang53@asu.edu,zhangtemplar@gmail.com
 
-Disclaimer: you can freely use, distribute and modify these codes. However, you need to use these codes at your own risk. If you find any problems or have any comments, please contact me through email. If you use these codes in your work, please cites my paper as described above.
+Disclaimer: You are free to use them for your own research, provided that you cite the source explicitly in your work, do not make any redistribution or use them for commercial purposes. However, you need to use these codes at your own risk. If you find any problems or have any comments, please contact me through email. If you use these codes in your work, please cites my paper as described above.
 
 Prerequisites: to use this package, you will need Matlab (tested on Matlab 2011a to 2013b, on Windows 7 64bit), the HMMall toolbox (available at http://www.cs.ubc.ca/~murphyk/Software/HMM/hmm_download.html) and IBM CPLEX studio (if you don't have it, please replace cplexqp from CPLEX toolbox with quadprog from Matlab builtin).
 
